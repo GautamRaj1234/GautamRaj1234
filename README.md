@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @GautamRaj1234
 - 👀 I’m interested in Coding
-- 🌱 I’m currently learning C-Programing
+- 🌱 I’m currently learning DSA...
 - 💞️ I’m looking to collaborate on 
 - 📫 How to reach me ...
 

@@ -99,7 +99,7 @@ RAG-based resume-screening SaaS. Hybrid matching engine (Gemini embeddings + Chr
 ### GitHub Stats
 
 <div align="center">
-<img src="./assets/stats.svg" width="49%" />
+<img src="./assets/stats.svg" width="48%" />
 <a href="https://git.io/streak-stats"><img src="./assets/streak-stats.svg" alt="GitHub Streak" width="49%" /></a>
 </div>
 

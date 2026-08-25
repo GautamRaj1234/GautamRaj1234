@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./banner.png" alt="Gautam Raj — Software Developer, AI/ML" width="100%" />
+<img src="./assets/banner.png" alt="Gautam Raj — Software Developer, AI/ML" width="100%" />
 
 <br/>
 
@@ -99,7 +99,7 @@ RAG-based resume-screening SaaS. Hybrid matching engine (Gemini embeddings + Chr
 ### GitHub Stats
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=GautamRaj1234&show_icons=true&theme=react&hide_border=true&bg_color=0F2A24&title_color=E9AE52&icon_color=74D8CC&text_color=F5F1E6" width="49%" />
+<img src="./assets/stats.svg" width="49%" />
 <a href="https://git.io/streak-stats"><img src="./assets/streak-stats.svg" alt="GitHub Streak" width="49%" /></a>
 </div>
 

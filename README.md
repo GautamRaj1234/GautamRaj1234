@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.png" alt="Gautam Raj — Software Developer, AI/ML" width="100%" />
+<img src="/banner.png" alt="Gautam Raj — Software Developer, AI/ML" width="100%" />
 
 <br/>
 

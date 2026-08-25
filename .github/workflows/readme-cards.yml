@@ -1,0 +1,41 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # Run every day at 03:00
+  push:
+    paths:
+      - ".github/workflows/readme-cards.yml" # Run any time this file is modified
+  workflow_dispatch: # Run manually from the Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=react&hide_border=true&bg_color=0F2A24&title_color=E9AE52&icon_color=74D8CC&text_color=F5F1E6
+          path: assets/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate streak stats
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&theme=react&hide_border=true&background=0F2A24&stroke=0F2A24&ring=E9AE52&fire=E9AE52&currStreakLabel=F5F1E6
+          path: assets/streak-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/streak-stats.svg
+          git commit -m "Update README cards" || exit 0
+          git push
